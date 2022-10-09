@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Styleku.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guyon waton</title>
+</head>
+<body>
+  <div style="text-align: center; padding: 40px; background-color: #243A73; color: #A5BECC;">
+    <div style="display: flex; justify-content: space-between;">
+        <h1>Lagu Jawa</h1>
+        <nav>
+        <ul style="display: flex;">
+            <li><a href="#home">Lagu Lainnya</a></li>
+            <p></p>
+            <li><a href="genre">Login</a></li>
+        </ul>
+        </nav>
+    </div>
+  </div>
+    
+    <div style="text-align: center;">
+        <br><br><br><br>
+        <video controls src="GUYONWATON OFFICIAL - SEBATAS TEMAN (OFFICIAL LYRIC VIDEO).mp4" width="900" id="myVideo">
+            <track default src="GUYONWATON OFFICIAL - SEBATAS TEMAN (OFFICIAL LYRIC VIDEO) - Javanese.vtt" kind ="subtitles" srclang="id" label="Jawa"/>
+        </video>
+    </div>
+    
+    <div class="buttonku">
+    <button onclick="playVid()" type="button" href="GUYONWATON OFFICIAL - SEBATAS TEMAN (OFFICIAL LYRIC VIDEO).mp4">Play Video</button>
+    <button onclick="pauseVid()" type="button" href="GUYONWATON OFFICIAL - SEBATAS TEMAN (OFFICIAL LYRIC VIDEO).mp4">Pause Video</button>
+    <button onclick="enableAutoplay()" type="button" href="GUYONWATON OFFICIAL - SEBATAS TEMAN (OFFICIAL LYRIC VIDEO).mp4">Auto Play</button>
+    <button onclick="disableAutoplay()" type="button" href="GUYONWATON OFFICIAL - SEBATAS TEMAN (OFFICIAL LYRIC VIDEO).mp4">Disable Play</button>
+    <button onclick="durationVid()" type="button" href="GUYONWATON OFFICIAL - SEBATAS TEMAN (OFFICIAL LYRIC VIDEO).mp4">Durasi Video</button>
+
+    </div>
+
+
+    <script>
+        var vid= document.getElementById ("myVideo")
+        document.getElementById("myVideo") 
+        function playVid(){
+            vid.play();
+        }
+
+        function pauseVid(){
+            vid.pause();
+        }
+        function enableAutoplay(){
+            vid.enableAutoplay();
+
+        }
+        function disableAutoplay(){
+            vid.disableAutoplay();
+        }
+        function durationVid(){
+            vid.durationVid();
+        }
+            
+        
+    </script>
+    
+</body>
+</html>
